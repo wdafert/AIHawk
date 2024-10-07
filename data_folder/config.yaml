@@ -2,32 +2,35 @@ remote: true
 
 experienceLevel:
   internship: false
-  entry: true
-  associate: true
+  entry: false
+  associate: false
   mid-senior level: true
-  director: false
-  executive: false
+  director: true
+  executive: true
 
 jobTypes:
   full-time: true
-  contract: false
-  part-time: false
+  contract: true
+  part-time: true
   temporary: true
   internship: false
   other: false
-  volunteer: true
+  volunteer: false
 
 date:
   all time: false
   month: false
-  week: false
-  24 hours: true
+  week: true
+  24 hours: false
 
 positions:
-  - Software engineer
+  - generative ai
 
 locations:
-  - Germany
+  - USA
+  # - Germany
+  # - Canada
+  # - UK
 
 apply_once_at_company: true
 
@@ -35,11 +38,11 @@ distance: 100
 
 company_blacklist:
   - wayfair
-  - Crossover
+  
 
 title_blacklist:
-  - word1
-  - word2
+  - sales
+  - marketing
 
 job_applicants_threshold:
   min_applicants: 0

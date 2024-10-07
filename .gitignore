@@ -156,5 +156,7 @@ venv.bak/
 # Mono Auto Generated Files
 mono_crash.*
 
+# Added by Wolfgang
 /generated_cv
 data_folder/secrets.yaml
+/tests
