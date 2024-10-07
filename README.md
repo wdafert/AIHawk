@@ -679,3 +679,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Disclaimer
 This tool, Auto_Jobs_Applier_AIHawk, is intended for educational purposes only. The creator assumes no responsibility for any consequences arising from its use. Users are advised to comply with the terms of service of relevant platforms and adhere to all applicable laws, regulations, and ethical guidelines. The use of automated tools for job applications may carry risks, including potential impacts on user accounts. Proceed with caution and at your own discretion.
+
+## Wolfgang Edits:
+Pull from original repo with:
+    git fetch upstream
+    git checkout main
+    git merge upstream/main
+    git push origin main

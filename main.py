@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 import os
 import re
 import sys
@@ -19,6 +20,9 @@ from loguru import logger
 
 # Suppress stderr
 sys.stderr = open(os.devnull, 'w')
+
+# Add this at the beginning of the file
+load_dotenv()
 
 class ConfigError(Exception):
     pass
@@ -102,17 +106,13 @@ class ConfigValidator:
 
 
     @staticmethod
-    def validate_secrets(secrets_yaml_path: Path) -> tuple:
-        secrets = ConfigValidator.validate_yaml_file(secrets_yaml_path)
-        mandatory_secrets = ['llm_api_key']
-
-        for secret in mandatory_secrets:
-            if secret not in secrets:
-                raise ConfigError(f"Missing secret '{secret}' in file {secrets_yaml_path}")
-
-        if not secrets['llm_api_key']:
-            raise ConfigError(f"llm_api_key cannot be empty in secrets file {secrets_yaml_path}.")
-        return secrets['llm_api_key']
+    def validate_secrets() -> str:
+        llm_api_key = os.getenv("LLM_API_KEY")
+        
+        if not llm_api_key:
+            raise ConfigError("LLM_API_KEY is not set in the .env file or environment variables.")
+        
+        return llm_api_key
 
 class FileManager:
     @staticmethod
@@ -124,7 +124,7 @@ class FileManager:
         if not app_data_folder.exists() or not app_data_folder.is_dir():
             raise FileNotFoundError(f"Data folder not found: {app_data_folder}")
 
-        required_files = ['secrets.yaml', 'config.yaml', 'plain_text_resume.yaml']
+        required_files = ['config.yaml', 'plain_text_resume.yaml']
         missing_files = [file for file in required_files if not (app_data_folder / file).exists()]
         
         if missing_files:
@@ -132,7 +132,7 @@ class FileManager:
 
         output_folder = app_data_folder / 'output'
         output_folder.mkdir(exist_ok=True)
-        return (app_data_folder / 'secrets.yaml', app_data_folder / 'config.yaml', app_data_folder / 'plain_text_resume.yaml', output_folder)
+        return (app_data_folder / 'config.yaml', app_data_folder / 'plain_text_resume.yaml', output_folder)
 
     @staticmethod
     def file_paths_to_dict(resume_file: Path | None, plain_text_resume_file: Path) -> dict:
@@ -157,8 +157,10 @@ def init_browser() -> webdriver.Chrome:
     except Exception as e:
         raise RuntimeError(f"Failed to initialize browser: {str(e)}")
 
-def create_and_run_bot(parameters, llm_api_key):
+def create_and_run_bot(parameters):
     try:
+        llm_api_key = ConfigValidator.validate_secrets()
+        
         style_manager = StyleManager()
         resume_generator = ResumeGenerator()
         with open(parameters['uploads']['plainTextResume'], "r", encoding='utf-8') as file:
@@ -192,15 +194,14 @@ def create_and_run_bot(parameters, llm_api_key):
 def main(resume: Path = None):
     try:
         data_folder = Path("data_folder")
-        secrets_file, config_file, plain_text_resume_file, output_folder = FileManager.validate_data_folder(data_folder)
+        config_file, plain_text_resume_file, output_folder = FileManager.validate_data_folder(data_folder)
         
         parameters = ConfigValidator.validate_config(config_file)
-        llm_api_key = ConfigValidator.validate_secrets(secrets_file)
         
         parameters['uploads'] = FileManager.file_paths_to_dict(resume, plain_text_resume_file)
         parameters['outputFileDirectory'] = output_folder
         
-        create_and_run_bot(parameters, llm_api_key)
+        create_and_run_bot(parameters)
     except ConfigError as ce:
         logger.error(f"Configuration error: {str(ce)}")
         logger.error(f"Refer to the configuration guide for troubleshooting: https://github.com/feder-cr/AIHawk_AIHawk_automatic_job_application/blob/main/readme.md#configuration {str(ce)}")

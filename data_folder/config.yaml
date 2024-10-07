@@ -27,10 +27,10 @@ positions:
   - generative ai
 
 locations:
-  - USA
-  # - Germany
-  # - Canada
-  # - UK
+  #- USA
+  #- Germany
+  #- Canada
+  - UK
 
 apply_once_at_company: true
 

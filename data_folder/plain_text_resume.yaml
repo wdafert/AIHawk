@@ -34,6 +34,14 @@ experience_details:
       - "Prompt Engineering"
       - "LLM Evaluation"
       - "Educational Technology"
+      - "Machine Learning Models"
+      - "Google Apps Script"
+      - "Google Gemini"
+      - "ChatGPT 4o"
+      - "GCP Vertex AI"
+      - "LangChain"
+      - "OpenAI"
+      - "Notion"
 
   - position: "CTO"
     company: "Unison Media"
@@ -45,9 +53,13 @@ experience_details:
       - responsibility: "Spearheaded adoption of machine learning models to optimize staff efficiency, automate business processes, and enhance content creation."
       - responsibility: "Introduced prompt engineering and evaluation strategies for LLM-powered applications, leading to a 10% increase in content creation speed."
     skills_acquired:
-      - "Machine Learning Models"
       - "Technical Leadership"
-      - "Prompt Engineering"
+      - "ClickUp"
+      - "Zoho One"
+      - "GPT 4"
+      - "Make.com"
+      - "Zapier"
+  
 
   - position: "CTO & Technical Lead"
     company: "Sea.earth"
@@ -62,6 +74,7 @@ experience_details:
       - "Blockchain"
       - "IPFS"
       - "Environmental Data Analysis"
+      - "Agile Project Management"
 
   - position: "Project Manager"
     company: "Cekaso"
@@ -76,6 +89,19 @@ experience_details:
       - "Project Management"
       - "UI/UX Design"
       - "Client Communication"
+      - "Jira"
+      - "Agile Project Management"
+      - "JavaScript"
+      - "Java"
+      - "React"
+      - "HTML 5"
+      - "CSS"
+      - "SQL"
+      - "Git"
+      - "Docker"
+      - "CI/CD"
+      - "AWS"
+      - "Azure"
 
 
 projects:
@@ -112,12 +138,13 @@ languages:
 
 
 interests:
-  - "Machine Learning since 3 years"
+  - "Machine Learning with PyTorch since 3 years"
   - "Entrepreneurship"
   - "Generative AI since 2 years"
   - "Blockchain Technology"
   - "Educational Technology"
-
+  - "Web Development"
+  - "Full Stack Development"
 
 availability:
   notice_period: "1 week"
