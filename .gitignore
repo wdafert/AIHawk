@@ -158,4 +158,5 @@ mono_crash.*
 
 # Added by Wolfgang
 tests
-
+data_folder/secrets.yaml
+data_folder_example/secrets.yaml
