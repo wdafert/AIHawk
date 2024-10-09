@@ -5,7 +5,7 @@ personal_information:
   country: "Portugal"
   city: "Funchal"
   address: "R. Eng. Francisco Perry Vidal 9"
-  zip_code: "90500"
+  zip_code: "9050 "
   phone_prefix: "+351"
   phone: "925432947"
   email: "w.dafert@gmail.com"
@@ -45,7 +45,7 @@ experience_details:
 
   - position: "CTO"
     company: "Unison Media"
-    employment_period: "2021 - 2024"
+    employment_period: "2021 - 2023"
     location: "New York, NY, USA"
     industry: "Media"
     key_responsibilities:

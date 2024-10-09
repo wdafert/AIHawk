@@ -24,12 +24,15 @@ date:
   24 hours: false
 
 positions:
-  - generative ai
+  #morning search
+  - generative ai  
+  #evening  search
+  # - Artificial Intelligence Consultant  
 
 locations:
-  #- USA
-  #- Germany
-  #- Canada
+  # - USA
+  # - Germany
+  # - Canada
   - UK
 
 apply_once_at_company: true
