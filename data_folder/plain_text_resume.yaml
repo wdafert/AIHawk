@@ -49,17 +49,17 @@ experience_details:
     location: "New York, NY, USA"
     industry: "Media"
     key_responsibilities:
-      - responsibility: "Defined and implemented the technical vision and strategy for a media agency, leading the development and deployment of AI-driven solutions."
-      - responsibility: "Spearheaded adoption of machine learning models to optimize staff efficiency, automate business processes, and enhance content creation."
-      - responsibility: "Introduced prompt engineering and evaluation strategies for LLM-powered applications, leading to a 10% increase in content creation speed."
+    - responsibility: "Defined and implemented the technical vision and strategy for a New York-based media agency, overseeing the development and project management teams."
+    - responsibility: "Spearheaded the adoption of a Zoho intranet, SOPs, and training manuals to optimize staff efficiency, automate business processes, and streamline website development."
+    - responsibility: "Assisted the CEO and team with a successful migration to Zoho One."
+
     skills_acquired:
       - "Technical Leadership"
       - "ClickUp"
       - "Zoho One"
       - "GPT 4"
       - "Make.com"
-      - "Zapier"
-  
+      - "Zapier" 
 
   - position: "CTO & Technical Lead"
     company: "Sea.earth"
@@ -80,7 +80,7 @@ experience_details:
     company: "Cekaso"
     employment_period: "2019 - 2021"
     location: "Hamburg, Germany"
-    industry: "Retail Technology"
+    industry: "Software Development"
     key_responsibilities:
       - responsibility: "Managed a team of 5+ developers to build custom POS software solutions for a leading European furniture purchasing group."
       - responsibility: "Played a key role in UI/UX design and client-facing project management, ensuring on-time and within-budget product delivery."
@@ -171,11 +171,11 @@ legal_authorization:
   legally_allowed_to_work_in_eu: "Yes"
   legally_allowed_to_work_in_us: "No"
   requires_eu_sponsorship: "No"
-  canada_work_authorization: "No"
+  canada_work_authorization: "Yes"
   requires_canada_visa: "No"
   legally_allowed_to_work_in_canada: "No"
   requires_canada_sponsorship: "No"
-  uk_work_authorization: "No"
+  uk_work_authorization: "Yes"
   requires_uk_visa: "Yes"
   legally_allowed_to_work_in_uk: "No"
   requires_uk_sponsorship: "Yes"

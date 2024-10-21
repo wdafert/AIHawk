@@ -686,3 +686,6 @@ Pull from original repo with:
     git checkout main
     git merge upstream/main
     git push origin main
+
+    python main.py --resume C:\Code\AIHawkFork\AIHawk\data_folder_example\CV_Wolfgang_Dafert-October2024.pdf
+    C:\Code/AIHawkFork/AIHawk/data_folder_exampleCV_Wolfgang_Dafert-October2024.pdf

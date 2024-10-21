@@ -3,7 +3,7 @@ remote: true
 experienceLevel:
   internship: false
   entry: false
-  associate: false
+  associate: true
   mid-senior level: true
   director: true
   executive: true
@@ -20,20 +20,30 @@ jobTypes:
 date:
   all time: false
   month: false
-  week: true
-  24 hours: false
+  week: false
+  24 hours: true
 
 positions:
-  #morning search
+  # - Chatgpt
+  - Artificial Intelligence Engineer
   - generative ai  
-  #evening  search
-  # - Artificial Intelligence Consultant  
+  - Artificial Intelligence Consultant  
+  - prompt engineering
+  # - AI tech lead
+  # - AI trainer
+  - AI Project Manager
+  # - Software Development Manager
+  - AI consultant
+  
+  
 
 locations:
-  # - USA
-  # - Germany
-  # - Canada
+  - USA
+  - Germany
+  - Canada
   - UK
+  # - European Economic Area
+  # - Asia
 
 apply_once_at_company: true
 
@@ -41,15 +51,23 @@ distance: 100
 
 company_blacklist:
   - wayfair
+  - mindrift
   
 
 title_blacklist:
   - sales
   - marketing
+  - dotnet
+  - devops
+  - sap
+  - kotlin
+  - scala
+  - ruby
+  - ServiceNow
 
 job_applicants_threshold:
   min_applicants: 0
-  max_applicants: 30
+  max_applicants: 300
 
 llm_model_type: openai
 llm_model: 'gpt-4o-mini'
