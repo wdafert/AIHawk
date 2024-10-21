@@ -34,6 +34,7 @@ positions:
   - AI Project Manager
   # - Software Development Manager
   - AI consultant
+  - AI Engineer
   
   
 
@@ -64,6 +65,12 @@ title_blacklist:
   - scala
   - ruby
   - ServiceNow
+  - Tableau
+  - Solidity
+  - IOT
+  - C++
+  - Java
+  - .NET
 
 job_applicants_threshold:
   min_applicants: 0
