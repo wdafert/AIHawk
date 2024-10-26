@@ -25,7 +25,6 @@ date:
 
 positions:
   # - Chatgpt
-  - Artificial Intelligence Engineer
   - generative ai  
   - Artificial Intelligence Consultant  
   - prompt engineering
@@ -35,14 +34,16 @@ positions:
   # - Software Development Manager
   - AI consultant
   - AI Engineer
-  
+  - Artificial Intelligence Engineer
+  # starting from top?
   
 
 locations:
-  - USA
   - Germany
-  - Canada
   - UK
+  - Canada
+  - USA
+  # starting from bottm?
   # - European Economic Area
   # - Asia
 
