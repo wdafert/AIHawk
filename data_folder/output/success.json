@@ -4582,5 +4582,21 @@
         "job_recruiter": "https://www.linkedin.com/in/dan-hoyes",
         "job_location": "Germany (Remote)",
         "pdf_path": "file:///C:/Code/AIHawkFork/AIHawk"
+    },
+    {
+        "company": "OSF Digital",
+        "job_title": "Salesforce Solution Architect",
+        "link": "https://www.linkedin.com/jobs/view/4050939963/",
+        "job_recruiter": "https://www.linkedin.com/in/celiamartinssantos",
+        "job_location": "Portugal (Remote)",
+        "pdf_path": "file:///C:/Code/AIHawkFork/AIHawk"
+    },
+    {
+        "company": "Asenium",
+        "job_title": "Cloud Licensing Engineer",
+        "link": "https://www.linkedin.com/jobs/view/4050948684/",
+        "job_recruiter": "https://www.linkedin.com/in/srikanthdusi",
+        "job_location": "Portugal (Remote)",
+        "pdf_path": "file:///C:/Code/AIHawkFork/AIHawk"
     }
 ]
